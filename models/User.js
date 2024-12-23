@@ -2,19 +2,19 @@ const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
     username: {
-        type: string,
+        type: String,
         required: true
     },
     password: {
-        type: string,
+        type: String,
         required: true
     },
-    rolse: [{
-        type: string,
+    roles: [{
+        type: String,
         default: "Employee"
     }],
-    Active: {
-        type: boolean,
+    active: {
+        type: Boolean,
         default: true
     }
 })
